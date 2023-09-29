@@ -3,7 +3,7 @@ desc: Unlock VIP of Bard
 http:
   script:
     # Pro
-    - match: ^https://api.revenuecat.com/.+/(receipts|subscribers/($RCAnonymousID%)?([\u4E00-\u9FA5A-Za-z0-9-_]+))$
+    - match: ^https://api.revenuecat.com/v1/(receipts|subscribers)/*
       name: bardy.js
       type: response
       require-body: true
