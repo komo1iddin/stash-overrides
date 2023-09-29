@@ -2,7 +2,7 @@ var body = $response.body;
 var obj = JSON.parse(body);
 
 obj.subscriber.entitlements = {
-      "Pro":{      
+      "Pro":{
               "product_identifier": "com.am.gpt3.monthly",
               "purchase_date":"2023-09-10T15:58:24Z",
               "expires_date":"2099-09-13T16:39:22Z",
