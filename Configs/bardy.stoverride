@@ -1,0 +1,20 @@
+name: Bardy
+desc: Unlock VIP of Bard 
+http:
+  script:
+    # Pro
+    - match: ^https://api.revenuecat.com/.+/(receipts|subscribers/($RCAnonymousID%)?([\u4E00-\u9FA5A-Za-z0-9-_]+))$
+      name: revenuecat.js
+      type: response
+      require-body: true
+      timeout: 30
+      max-size: 0
+  mitm:
+    - "api.revenuecat.com"
+    - "buy.itunes.apple.com"
+
+script-providers:
+  revenuecat.js:
+    url: https://raw.githubusercontent.com/komo1iddin/stash-overrides/main/Scripts/Bardy.js
+    interval: 86400
+
