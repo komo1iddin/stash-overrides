@@ -6,7 +6,9 @@ var objc = JSON.parse($response.body);
     "non_subscriptions": {},
     "first_seen": "2023-09-10T16:38:36Z",
     "original_application_version": "202308101548",
-    "other_purchases": {},
+    "other_purchases": {
+      
+    },
     "management_url": null,
     "subscriptions": {
       "com.am.gpt3.monthly": {
