@@ -1,13 +1,13 @@
 name: Bardy
-desc: Unlock VIP of Bard 
+desc: Unlock VIP of Bard assistant
 http:
   script:
     # Pro
-    - match: ^https://api.revenuecat.com/v1/(receipts|subscribers)/*
+    - match: https://api.revenuecat.com/v1/(receipts|subscribers)/*
       name: bardy.js
       type: response
       require-body: true
-      timeout: 30
+      timeout: 10
       max-size: 0
   mitm:
     - "api.revenuecat.com"
