@@ -3,7 +3,7 @@ desc: Unlock Pro in Tiny Decision
 http:
   script:
     # Pro
-    - match: https://api.revenuecat.com/v1/(receipts|subscribers)/*
+    - match: https://api.revenuecat.com/.+/(receipts|subscribers/($RCAnonymousID%)?([\u4E00-\u9FA5A-Za-z0-9-_]+))$
       name: tinydecision.js
       type: response
       require-body: true
