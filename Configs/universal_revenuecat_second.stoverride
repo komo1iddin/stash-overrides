@@ -14,6 +14,6 @@ http:
 
 script-providers:
   universal_revenuecat_second.js:
-    url: hhttps://raw.githubusercontent.com/komo1iddin/stash-overrides/main/Scripts/universal_revenuecat_second.js
+    url: https://raw.githubusercontent.com/komo1iddin/stash-overrides/main/Scripts/universal_revenuecat_second.js
     interval: 86400
 
