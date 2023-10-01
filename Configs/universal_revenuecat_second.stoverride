@@ -1,10 +1,10 @@
-name: Universal Revenuecat
+name: Universal Revenuecat 2
 desc: Unlock Pro with Revenuecat
 http:
   script:
     # Pro
     - match: ^https://api.revenuecat.com/.+/(receipts|subscribers/($RCAnonymousID%)?([\u4E00-\u9FA5A-Za-z0-9-_]+))$
-      name: universal_revenuecat.js
+      name: universal_revenuecat_second.js
       type: response
       require-body: true
       timeout: 10
@@ -13,7 +13,7 @@ http:
     - "api.revenuecat.com"
 
 script-providers:
-  universal_revenuecat.js:
-    url: https://raw.githubusercontent.com/komo1iddin/stash-overrides/main/Scripts/tinydecision.js
+  universal_revenuecat_second.js:
+    url: hhttps://raw.githubusercontent.com/komo1iddin/stash-overrides/main/Scripts/universal_revenuecat_second.js
     interval: 86400
 
