@@ -1,0 +1,20 @@
+name: Tiny Decision Pro
+desc: Unlock Pro in Tiny Decision
+http:
+  script:
+    # Pro
+    - match: https://api.revenuecat.com/v1/(receipts|subscribers)/*
+      name: tinydecision.js
+      type: response
+      require-body: true
+      timeout: 10
+      max-size: 0
+  mitm:
+    - "api.revenuecat.com"
+    - "buy.itunes.apple.com"
+
+script-providers:
+  tinydecision.js:
+    url: https://raw.githubusercontent.com/komo1iddin/stash-overrides/main/Scripts/tinydecision.js
+    interval: 86400
+
