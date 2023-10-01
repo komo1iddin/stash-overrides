@@ -22,7 +22,7 @@ if (obj.subscriber.subscriptions) {
 // Replace "expires_date" field in obj.subscriber.entitlements
 if (obj.subscriber.entitlements) {
   Object.entries(fieldsToReplace).forEach(([field, value]) => {
-    obj.subscriber.entitlements.expires_date = value;
+    obj.subscriber.entitlements[field] = value;
   });
 }
 
