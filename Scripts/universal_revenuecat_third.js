@@ -21,16 +21,10 @@ if (obj.subscriber.subscriptions) {
 
 // Replace "expires_date" field in obj.subscriber.entitlements
 if (obj.subscriber.entitlements) {
-  Object.entries(fieldsToReplace).forEach(([field, value]) => {
-    obj.subscriber.entitlements[field] = value;
-  });
+  obj.subscriber.entitlements.expires_date = fieldsToReplace.expires_date;
 }
 
 // Stringify the modified object back to JSON
 body = JSON.stringify(obj);
 
 $done({ body });
-
-
-
-
